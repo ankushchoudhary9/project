@@ -1,3 +1,3 @@
-chmod +x scripts/*.sh
-git update-index --chmod=+x scripts/*.sh
-git add . && git commit -m "fix scripts" && git push
+#!/bin/bash
+echo "<p>Served by: $(hostname)</p>" >> /var/www/html/index.html
+systemctl restart httpd
